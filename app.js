@@ -24,9 +24,6 @@ app.use('/api/v1/user', userRoutes);
 app.use('/api/v1/products', productRoutes);
 
 const PORT = process.env.PORT || 5000;
-// app.listen(PORT, () => {
-//     console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
-// });
-app.listen(PORT, '10.228.101.134', () => {
-    console.log('server started');
-})
+app.listen(PORT, () => {
+    console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
+});
